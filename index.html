@@ -2,12 +2,13 @@
 <html> <!--Root element of an HTML page -->
     <head> <!-- Hidden stuff (title, meta, link, script , css/js) -->
         <title>My First Web Page</title>
+        <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
     </head>
     <body> <!-- Visible stuff {What a user actually sees} (text, images, links, etc.) -->
-        <h1>Hello World!</h1> <!-- Heading 1 (largest heading)  h1 to h6 (smallest heading) -->
+        <h1 id="main-title" class="highlight">Hello World!</h1> <!-- Heading 1 (largest heading)  h1 to h6 (smallest heading) -->
         <p>Welcome to my first web page.</p> <!-- Paragraph (normal text)-->
         <hr> <!-- Horizontal Rule (a horizontal line) -->
-        <h2>About Me</h2>
+        <h2 class="highlight">About Me</h2>
         <p>My name is John Doe, and I am learning web development.</p>
         <h3>My Hobbies</h3>
         <ul> <!-- Unordered List (bulleted list) -->
@@ -15,10 +16,12 @@
             <li>Coding</li>
             <li>Traveling</li>
         </ul>
-        <a href="https://meacademy.in/">Visit meacademy.in/</a> <!-- Hyperlink -->
+        <a href="#main-title">Go to main title/</a> <!-- Hyperlink -->
         <br> <!-- Line Break -->
         <a href="https://meacademy.in/" target="_blank">
         <img src="https://meacademy.in/wp-content/uploads/2024/09/AA_page-0001.jpg" alt="Me Academy Logo"> <!-- Image -->
         </a>
+        <br>
+         <a href="#main-title">Go top/</a> <!-- Hyperlink -->
     </body>
 </html>
